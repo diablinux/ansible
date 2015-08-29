@@ -1,0 +1,13 @@
+---
+
+galaxy_info:
+  author: Angel Cabrera
+  description: Delete guests on vSphere
+  min_ansible_version: 1.9.2
+  platforms:
+    - name: all
+      versions:
+        - all
+  categories:
+    - cloud
+dependencies:
