@@ -1,0 +1,9 @@
+---
+
+- name: Creating new guests on vSphere
+  hosts: app-servers
+  connection: local
+  gather_facts: false
+
+  roles:
+     - { role: cloud/vsphere/create }

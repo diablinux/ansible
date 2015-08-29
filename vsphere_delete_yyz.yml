@@ -1,0 +1,9 @@
+---
+
+- name: Delete guests from vSphere
+  hosts: app-servers
+  connection: local
+  gather_facts: false
+
+  roles:
+     - { role: cloud/vsphere/delete }
