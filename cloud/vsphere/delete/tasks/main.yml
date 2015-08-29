@@ -1,10 +1,10 @@
 ---
 
-- name: Removing vm's from vSphere
+- name: Removing guests from vSphere
   vsphere_guest:
-    vcenter_hostname: kef1-vcenter-ceng.lab.rmsonecloud.net
-    username: lab\svc-vmcreator
-    password: O5ZkSFQ8b8gP
+    vcenter_hostname: vcenter.domain.com
+    username: username
+    password: password
     guest: "{{ inventory_hostname }}"
     state: absent
     force: yes
